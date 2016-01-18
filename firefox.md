@@ -1,4 +1,4 @@
-== Dockfile ==
+## Dockfile
 ```
 FROM ubuntu:14.04
 
@@ -17,12 +17,12 @@ USER developer
 ENV HOME /home/developer
 CMD /usr/bin/firefox
 ```
-== Build ==
+## Build
 ```
 docker build -t firefox .
 ```
 
-== Use ==
+## Use
 ```
 docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix firefox
 ```
