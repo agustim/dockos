@@ -25,5 +25,5 @@ docker build -t deluge .
 ```
 DELUGE_DL=$HOME/deluge
 mkdir -p $DELUGE_DL
-docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/developer:$DELUGE_DL
+docker run -ti --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/developer:$DELUGE_DL deluge
 ```
