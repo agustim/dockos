@@ -10,4 +10,5 @@ Run your apps in a docker containt.
 * [deluge](deluge.md)
 * [chrome](chrome.md)
 * [spotify](spotify.md)
+* [youtube-dl](youtube-dl.md)
 
