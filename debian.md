@@ -9,12 +9,13 @@ sudo apt-get update && sudo apt-get -y upgrade
 ## Install ssh + sudo
 ```
 sudo apt-get install openssh-server sudo
+sudo su -c 'cat /etc/sudoers |grep -v "%sudo" > /etc/sudoers.new'
+sudo su -c 'echo "%sudo ALL=(ALL) NOPASSWD:ALL" >> /etc/sudors.new'
+sudo mv /etc/sudoers /etc/sudoers.old
+sudo mv /etc/sudoers.new /etc/sudoers
+
 ```
 
-## Install ssh + sudo
-```
-sudo apt-get install openssh-server sudo
-```
 ## Docker.io
 ```
 sudo apt-get install -y apt-transport-https ca-certificates
