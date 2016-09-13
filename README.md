@@ -2,7 +2,7 @@ Run your apps in a docker containt.
 
 ## Prepare system
 
-* [debian](Debian)
+* [Debian](debian.md)
 
 ## Containers
 
